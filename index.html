@@ -113,7 +113,60 @@ body,button,input,.work,.work-card,.nav,.toolbar{font-family:'Noto Sans TC',sans
 @media(max-width:700px){.expo-intro h1{font-size:clamp(37px,8.5vw,60px)!important;line-height:1.4!important;margin:30px 0 20px!important}.expo-intro h1 .title-red:after{height:5px;bottom:2px}}
 @media(prefers-reduced-motion:reduce){.expo-intro h1 *{animation:none!important}}
 
-</style></head><body><header class="nav"><div class="shell nav-in"><img alt="巨匠電腦 4.0" class="logo" src="giant-logo.png"/><nav aria-label="作品專區切換" class="site-tabs"><a aria-current="page" class="site-tab active" href="index.html">學員作品</a><a class="site-tab" href="teacher.html">講師作品 <span aria-hidden="true">↗</span></a></nav></div></header><section class="hero"><div class="expo-hero shell"><div class="expo-intro"><span class="expo-overline"><i></i> GIANT COMPUTER · AI AGENT EXHIBITION / 2026</span><div class="expo-stamp">DIGITAL<br/>SHOWCASE<br/><b>VOL. 01</b></div><h1 aria-label="從學習到創作，讓成果被看見"><span class="title-ink">從學習到創作，</span><br/><span class="title-red">讓成果被看見<span class="title-punctuation">。</span></span></h1><p>AI AGENT 作品成果展<br/>從課堂靈感到真實應用，讓每一個想法都有自己的舞台。</p><div class="expo-actions"><a href="index.html#works">探索學員作品 <b>↗</b></a><a href="teacher.html#teacher-works">走進講師展區 <b>↗</b></a></div></div><div class="expo-visual"><div class="expo-visual-head"><span>CURATED WORKS / 精選展出</span><span>● LIVE GALLERY</span></div><div class="expo-poster"><img alt="西班牙文陪練助理實際網頁截圖" src="spanish-hero-clean.webp"/><div class="expo-poster-meta"><span>06 / 28</span><strong>IDEAS<br/>IN MOTION.</strong></div></div><div class="expo-visual-foot"><span>28 CREATIVE PROJECTS</span><span>SCROLL TO EXPLORE ↓</span></div></div></div></section><div class="expo-ticker"><div class="shell"><span>AI × CREATIVITY</span><span>✳</span><span>FROM IDEA TO REALITY</span><span>✳</span><span>巨匠電腦 AI AGENT</span><span>✳</span><span>EXPLORE THE POSSIBILITIES</span></div></div><main class="shell main" id="works"><div class="expo-divider"><span>01 / THE GALLERY</span><span>探索每一份獨一無二的創作</span><span>✳</span></div><div class="section-top"><div><div class="section-kicker">EXPLORE THE COLLECTION</div><h2>AI Agent 作品展示</h2></div><p>每一個創意，都值得被看見。</p></div><div class="toolbar"><div aria-label="作品分類" class="filters" role="group"><button aria-pressed="true" class="filter active" data-filter="全部">全部作品</button><button aria-pressed="false" class="filter" data-filter="生活應用">生活應用</button><button aria-pressed="false" class="filter" data-filter="學習教育">學習教育</button><button aria-pressed="false" class="filter" data-filter="商務效率">商務效率</button><button aria-pressed="false" class="filter" data-filter="創意展示">創意展示</button></div><label class="search"><span aria-hidden="true">⌕</span><input aria-label="搜尋作品名稱" id="search" placeholder="搜尋作品名稱..." type="search"/></label></div><div class="grid" id="grid"><a class="work" data-category="生活應用" data-search="旅遊助理 王O娟 戴O楚 王O剛 陳O婷 邱O諭" href="travel-agent.html" rel="noopener noreferrer" target="_blank"><div class="project-preview"><img alt="旅遊助理 實際網頁截圖" decoding="async" loading="lazy" src="preview-student-01.webp"/></div><div class="work-top"><span aria-hidden="true" class="work-icon">🧳</span><span class="work-number">PROJECT 01</span></div><span class="category">生活應用</span><h3>旅遊助理</h3><div class="creator">創作者｜邱O諭</div><div class="work-bottom"><span>查看作品</span><span class="arrow">↗</span></div></a>
+</style>
+<style>
+/* Match the teacher showcase poster: framed, tilted screenshot with no inner blank bands. */
+.expo-poster{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:space-between!important;
+  align-items:stretch!important;
+  min-height:480px!important;
+  padding:28px 28px 22px!important;
+  gap:22px!important;
+  overflow:hidden!important;
+  background:#e92d2b!important;
+}
+.expo-poster::after{display:none!important;content:none!important}
+.expo-poster>img{
+  display:block!important;
+  position:relative!important;
+  z-index:1!important;
+  box-sizing:border-box!important;
+  width:92%!important;
+  height:300px!important;
+  min-height:0!important;
+  max-height:none!important;
+  flex:0 0 auto!important;
+  aspect-ratio:auto!important;
+  margin:0 auto!important;
+  padding:0!important;
+  border:9px solid #fff!important;
+  background:#fff!important;
+  object-fit:cover!important;
+  object-position:23% center!important;
+  transform:rotate(-4deg)!important;
+  filter:none!important;
+  box-shadow:20px 20px 0 #181818!important;
+}
+.expo-poster-meta{
+  position:relative!important;
+  z-index:2!important;
+  display:flex!important;
+  align-items:flex-end!important;
+  justify-content:space-between!important;
+  min-height:104px!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+}
+@media(max-width:700px){
+  .expo-poster{min-height:365px!important;padding:20px 20px 18px!important;gap:20px!important}
+  .expo-poster>img{width:92%!important;height:clamp(170px,45vw,255px)!important;border-width:7px!important;box-shadow:12px 12px 0 #181818!important}
+  .expo-poster-meta{min-height:76px!important}
+}
+</style>
+</head><body><header class="nav"><div class="shell nav-in"><img alt="巨匠電腦 4.0" class="logo" src="giant-logo.png"/><nav aria-label="作品專區切換" class="site-tabs"><a aria-current="page" class="site-tab active" href="index.html">學員作品</a><a class="site-tab" href="teacher.html">講師作品 <span aria-hidden="true">↗</span></a></nav></div></header><section class="hero"><div class="expo-hero shell"><div class="expo-intro"><span class="expo-overline"><i></i> GIANT COMPUTER · AI AGENT EXHIBITION / 2026</span><div class="expo-stamp">DIGITAL<br/>SHOWCASE<br/><b>VOL. 01</b></div><h1 aria-label="從學習到創作，讓成果被看見"><span class="title-ink">從學習到創作，</span><br/><span class="title-red">讓成果被看見<span class="title-punctuation">。</span></span></h1><p>AI AGENT 作品成果展<br/>從課堂靈感到真實應用，讓每一個想法都有自己的舞台。</p><div class="expo-actions"><a href="index.html#works">探索學員作品 <b>↗</b></a><a href="teacher.html#teacher-works">走進講師展區 <b>↗</b></a></div></div><div class="expo-visual"><div class="expo-visual-head"><span>CURATED WORKS / 精選展出</span><span>● LIVE GALLERY</span></div><div class="expo-poster"><img alt="西班牙文陪練助理實際網頁截圖" src="spanish-hero-clean.webp"/><div class="expo-poster-meta"><span>06 / 28</span><strong>IDEAS<br/>IN MOTION.</strong></div></div><div class="expo-visual-foot"><span>28 CREATIVE PROJECTS</span><span>SCROLL TO EXPLORE ↓</span></div></div></div></section><div class="expo-ticker"><div class="shell"><span>AI × CREATIVITY</span><span>✳</span><span>FROM IDEA TO REALITY</span><span>✳</span><span>巨匠電腦 AI AGENT</span><span>✳</span><span>EXPLORE THE POSSIBILITIES</span></div></div><main class="shell main" id="works"><div class="expo-divider"><span>01 / THE GALLERY</span><span>探索每一份獨一無二的創作</span><span>✳</span></div><div class="section-top"><div><div class="section-kicker">EXPLORE THE COLLECTION</div><h2>AI Agent 作品展示</h2></div><p>每一個創意，都值得被看見。</p></div><div class="toolbar"><div aria-label="作品分類" class="filters" role="group"><button aria-pressed="true" class="filter active" data-filter="全部">全部作品</button><button aria-pressed="false" class="filter" data-filter="生活應用">生活應用</button><button aria-pressed="false" class="filter" data-filter="學習教育">學習教育</button><button aria-pressed="false" class="filter" data-filter="商務效率">商務效率</button><button aria-pressed="false" class="filter" data-filter="創意展示">創意展示</button></div><label class="search"><span aria-hidden="true">⌕</span><input aria-label="搜尋作品名稱" id="search" placeholder="搜尋作品名稱..." type="search"/></label></div><div class="grid" id="grid"><a class="work" data-category="生活應用" data-search="旅遊助理 王O娟 戴O楚 王O剛 陳O婷 邱O諭" href="travel-agent.html" rel="noopener noreferrer" target="_blank"><div class="project-preview"><img alt="旅遊助理 實際網頁截圖" decoding="async" loading="lazy" src="preview-student-01.webp"/></div><div class="work-top"><span aria-hidden="true" class="work-icon">🧳</span><span class="work-number">PROJECT 01</span></div><span class="category">生活應用</span><h3>旅遊助理</h3><div class="creator">創作者｜邱O諭</div><div class="work-bottom"><span>查看作品</span><span class="arrow">↗</span></div></a>
 <a class="work" data-category="生活應用" data-search="安心就醫・溫暖接送 陳俐彤 陳O彤" href="1151029-長照就醫接送-陳俐彤.html" rel="noopener noreferrer" target="_blank"><div class="project-preview"><img alt="安心就醫・溫暖接送 實際網頁截圖" decoding="async" loading="lazy" src="preview-student-02.webp"/></div><div class="work-top"><span aria-hidden="true" class="work-icon">🚑</span><span class="work-number">PROJECT 02</span></div><span class="category">生活應用</span><h3>安心就醫・溫暖接送</h3><div class="creator">創作者｜陳O彤</div><div class="work-bottom"><span>查看作品</span><span class="arrow">↗</span></div></a>
 <a class="work" data-category="創意展示" data-search="陪伴的三種樣子 周慧萍 周O萍" href="20261029_AI Agent作品_周慧萍.html" rel="noopener noreferrer" target="_blank"><div class="project-preview"><img alt="陪伴的三種樣子 實際網頁截圖" decoding="async" loading="lazy" src="preview-student-03.webp"/></div><div class="work-top"><span aria-hidden="true" class="work-icon">🤝</span><span class="work-number">PROJECT 03</span></div><span class="category">創意展示</span><h3>陪伴的三種樣子</h3><div class="creator">創作者｜周O萍</div><div class="work-bottom"><span>查看作品</span><span class="arrow">↗</span></div></a>
 <a class="work" data-category="創意展示" data-search="ai agent 創作作品集 洪雪瑛 洪O瑛" href="AI AGENT 創作作品集｜洪雪瑛.html" rel="noopener noreferrer" target="_blank"><div class="project-preview"><img alt="AI AGENT 創作作品集 實際網頁截圖" decoding="async" loading="lazy" src="preview-student-04.webp"/></div><div class="work-top"><span aria-hidden="true" class="work-icon">🎨</span><span class="work-number">PROJECT 04</span></div><span class="category">創意展示</span><h3>AI AGENT 創作作品集</h3><div class="creator">創作者｜洪O瑛</div><div class="work-bottom"><span>查看作品</span><span class="arrow">↗</span></div></a>
